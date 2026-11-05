@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "sk-sk">
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome to Cooking. - Cooking - Martin Kasznár</title>
+		<link href="mojecss.css" rel="stylesheet">
+		<script src="https://code.responsivevoice.org/responsivevoice.js?key=A9pSt06q"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1><a href="index.html">FT Test</a> <a href="cooking.html" class="chosen">Cooking</a> <a href="nagger.html">Nagger</a></h1>
+		</header>
+		<article>
+			<h2>"dummy heading"</h2>
+			<div><label>Ako dlho sa Vaša rúra zohrieva? (spôsoby inputu sa sčítajú)</label></div>
+			<div><input type="number" id="preH" value="0" min="0"> hodín</div>
+			<div><input type="number" id="preM" value="0" min="0"> minút</div>
+			<div><input type="number" id="preS" value="0" min="0"> sekúnd</div>
+			<div><label>Ako dlho má piecť po zohriatí? (spôsoby inputu sa sčítajú)</label></div>
+			<div><input type="number" id="postH" value="0" min="0"> hodín</div>
+			<div><input type="number" id="postM" value="0" min="0"> minút</div>
+			<div><input type="number" id="postS" value="0" min="0"> sekúnd</div>
+			<div><button onclick="evaluate_cooking();">Evalvovať údaje a začať Cooking</button></div>
+			<p class="cg" id="s0">Welcome to Cooking.</p>
+			<p class="cg" id="s1">Oven is heating up...</p>
+			<p class="cg" id="s2">Oven is heated up. Filled it?</p>
+			<button id="s2b" onclick="goS3();">Yes</button>
+			<p class="cg" id="s3">Oven is cooking...</p>
+			<p class="cg" id="s4">Oven finished cooking. Reset?</p>
+			<button id="s4b" onclick="goS0();">Yes</button>
+			<script>
+				goS0();
+			</script>
+		</article>
+		<footer>
+			Tu sa nachádza Cooking používajúci súčasti ResponsiveVoice.
+		</footer>
+	</body>
+</html>

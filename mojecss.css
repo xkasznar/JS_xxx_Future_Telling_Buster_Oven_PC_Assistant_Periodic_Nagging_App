@@ -1,0 +1,116 @@
+body{
+	background-color: grey;
+}
+h1{
+	background-color: lightsteelblue;
+	padding: 8px;
+	margin-top:-8px;
+	margin-left:-8px;
+	margin-right:-8px;
+	text-align: right;
+}
+h2{
+	display: none;
+}
+article{
+	background-color: white;
+	width: 100%;
+	min-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	
+}
+footer{
+	background-color: gold;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 4px;
+	text-align: left;
+}
+header a{
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+}
+header a:hover, header a.chosen{
+	background-color: black;
+	color: white;
+}
+
+#butts{
+	float: left;
+	padding-right: 150px;
+}
+#ukaz{
+	position: relative;
+	left: 520px;
+	bottom: 280px;
+}
+p.ix{
+	position: relative;
+	font-size: 30px;
+	bottom: 120px;
+}
+#virgin{
+	display: block;
+}
+#great, #sorry, #circ, #star, #tria, #umbr{
+	display: none;
+}
+
+#circ, #star, #tria, #umbr{
+	position: relative;
+	bottom: 190px;
+	left: 100px;
+}
+
+article input{
+	width: 50px;
+}
+article div{
+	padding: 5px;
+}
+p.cg{
+	font-size: 30px;
+	padding-bottom: 40px;
+}
+#s0{
+	display: block;
+}
+#s1,#s2,#s2b,#s3,#s4,#s4b{
+	display: none;
+}
+#s2b, #s4b{
+	position: relative;
+	bottom: 60px;
+}
+
+p.nr{
+	font-size: 30px;
+	padding-bottom: 40px;
+}
+#nS0{
+	display: block;
+}
+#nS1{
+	display: none;
+}
+
+@media (min-width: 576px){
+	article{
+		width: 540px;
+	}
+}
+@media (min-width: 768px){
+	article{
+		width: 720px;
+	}
+	.row{
+		grid-template-columns: auto auto;
+	}
+}

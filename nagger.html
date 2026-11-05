@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "sk-sk">
+	<head>
+		<meta charset="utf-8">
+		<title>I am currently silent. - Nagger - Martin Kasznár</title>
+		<link href="mojecss.css" rel="stylesheet">
+		<script src="https://code.responsivevoice.org/responsivevoice.js?key=A9pSt06q"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1><a href="index.html">FT Test</a> <a href="cooking.html">Cooking</a> <a href="nagger.html" class="chosen">Nagger</a></h1>
+		</header>
+		<article>
+			<h2>"dummy heading"</h2>
+			<div><label>V akom intervale má Nagger "otravovať"? (spôsoby inputu sa sčítajú)</label></div>
+			<div><input type="number" id="nagH" value="0" min="0"> hodín</div>
+			<div><input type="number" id="nagM" value="0" min="0"> minút</div>
+			<div><input type="number" id="nagS" value="0" min="0"> sekúnd</div>
+			<div><label>S čím? Napíšte po anglicky.</label></div>
+			<div><textarea id="ta" rows="20" cols="90"></textarea></div>
+			<div><button onclick="evaluate_nagging();">Periodicky mi to opakuj</button>
+			<button onclick="purgeFL();">Neopakovat nic</button></div>
+			<p class="nr" id="nS0">I am currently silent.</p>
+			<p class="nr" id="nS1">Nagging...</p>
+		</article>
+		<footer>
+			Tu sa nachádza Nagger používajúci súčasti ResponsiveVoice.
+		</footer>
+	</body>
+</html>
